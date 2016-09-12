@@ -1,0 +1,6 @@
+JDBC drivers for Oracle, mysql, and HSQLDB
+ojdbc14.jar:  Oracle 10g JDBC driver, from $ORACLE_HOME/jdbc/lib on dbs2
+mysql-connector-java-5.1.8-bin.jar: MySql 5.1 JDBC driver, downloaded from dev.mysql.com
+hsqldb.jar: v 1.8, memory-resident database, see http://www.hsqldb.org
+JUnit--
+junit-4.7.jar: v 4.7, for JUnit testing, JUnit4 (and JUnit3) from eclipse plugins

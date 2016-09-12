@@ -1,0 +1,113 @@
+Testsuite: cs636.music.dao.ProductDAOTest
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.216 sec
+
+------------- Standard Output ---------------
+Starting JPA initialization
+[EL Config]: metadata: The access type for the persistent class [class cs636.music.domain.Product] is set to [FIELD].
+[EL Config]: metadata: The target entity (reference) class for the one to many mapping element [field tracks] is being defaulted to: class cs636.music.domain.Track.
+[EL Config]: metadata: The access type for the persistent class [class cs636.music.domain.Track] is set to [FIELD].
+[EL Config]: metadata: The target entity (reference) class for the many to one mapping element [field product] is being defaulted to: class cs636.music.domain.Product.
+[EL Config]: metadata: The access type for the persistent class [class cs636.music.domain.Invoice] is set to [FIELD].
+[EL Config]: metadata: The target entity (reference) class for the one to many mapping element [field lineItems] is being defaulted to: class cs636.music.domain.LineItem.
+[EL Config]: metadata: The target entity (reference) class for the many to one mapping element [field user] is being defaulted to: class cs636.music.domain.User.
+[EL Config]: metadata: The access type for the persistent class [class cs636.music.domain.User] is set to [FIELD].
+[EL Config]: metadata: The access type for the persistent class [class cs636.music.domain.LineItem] is set to [FIELD].
+[EL Config]: metadata: The target entity (reference) class for the many to one mapping element [field product] is being defaulted to: class cs636.music.domain.Product.
+[EL Config]: metadata: The target entity (reference) class for the many to one mapping element [field invoice] is being defaulted to: class cs636.music.domain.Invoice.
+[EL Config]: metadata: The access type for the persistent class [class cs636.music.domain.Download] is set to [FIELD].
+[EL Config]: metadata: The target entity (reference) class for the many to one mapping element [field track] is being defaulted to: class cs636.music.domain.Track.
+[EL Config]: metadata: The target entity (reference) class for the many to one mapping element [field user] is being defaulted to: class cs636.music.domain.User.
+[EL Config]: metadata: The alias name for the entity class [class cs636.music.domain.Product] is being defaulted to: Product.
+[EL Config]: metadata: The table name for entity [class cs636.music.domain.Product] is being defaulted to: PRODUCT.
+[EL Config]: metadata: The alias name for the entity class [class cs636.music.domain.Track] is being defaulted to: Track.
+[EL Config]: metadata: The table name for entity [class cs636.music.domain.Track] is being defaulted to: TRACK.
+[EL Config]: metadata: The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: The alias name for the entity class [class cs636.music.domain.Invoice] is being defaulted to: Invoice.
+[EL Config]: metadata: The table name for entity [class cs636.music.domain.Invoice] is being defaulted to: INVOICE.
+[EL Config]: metadata: The alias name for the entity class [class cs636.music.domain.User] is being defaulted to: User.
+[EL Config]: metadata: The column name for element [zip] is being defaulted to: ZIP.
+[EL Config]: metadata: The column name for element [state] is being defaulted to: STATE.
+[EL Config]: metadata: The column name for element [lastname] is being defaulted to: LASTNAME.
+[EL Config]: metadata: The column name for element [address1] is being defaulted to: ADDRESS1.
+[EL Config]: metadata: The column name for element [address2] is being defaulted to: ADDRESS2.
+[EL Config]: metadata: The column name for element [firstname] is being defaulted to: FIRSTNAME.
+[EL Config]: metadata: The column name for element [city] is being defaulted to: CITY.
+[EL Config]: metadata: The column name for element [country] is being defaulted to: COUNTRY.
+[EL Config]: metadata: The alias name for the entity class [class cs636.music.domain.LineItem] is being defaulted to: LineItem.
+[EL Config]: metadata: The column name for element [quantity] is being defaulted to: QUANTITY.
+[EL Config]: metadata: The alias name for the entity class [class cs636.music.domain.Download] is being defaulted to: Download.
+[EL Config]: metadata: The table name for entity [class cs636.music.domain.Download] is being defaulted to: DOWNLOAD.
+[EL Config]: metadata: The primary key column name for the mapping element [field product] is being defaulted to: PRODUCT_ID.
+[EL Config]: metadata: The primary key column name for the mapping element [field user] is being defaulted to: USER_ID.
+[EL Config]: metadata: The primary key column name for the mapping element [field product] is being defaulted to: PRODUCT_ID.
+[EL Config]: metadata: The primary key column name for the mapping element [field invoice] is being defaulted to: INVOICE_ID.
+[EL Config]: metadata: The primary key column name for the mapping element [field track] is being defaulted to: TRACK_ID.
+[EL Config]: metadata: The primary key column name for the mapping element [field user] is being defaulted to: USER_ID.
+starting testEMF
+Starting customizer...
+No database URL configured in persistence.xml, assuming web app
+For web app, applying workaround for JNDI lookup problem...
+Database URL is 
+Now setting future transactions to serializable isolation
+[EL Info]: EclipseLink, version: Eclipse Persistence Services - 2.5.0.v20130507-3faac2b
+[EL Severe]: ejb: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+Problem with contacting DB
+Exception: javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+  cause: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+    cause's cause: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+Exception in static initializer
+java.lang.RuntimeException: Exception in configureServices
+  cause: javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+    cause's cause: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+Starting customizer...
+No database URL configured in persistence.xml, assuming web app
+For web app, applying workaround for JNDI lookup problem...
+Database URL is 
+Now setting future transactions to serializable isolation
+[EL Info]: EclipseLink, version: Eclipse Persistence Services - 2.5.0.v20130507-3faac2b
+[EL Severe]: ejb: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+------------- ---------------- ---------------
+Testcase: testFindProductByCode(cs636.music.dao.ProductDAOTest):	Caused an ERROR
+Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+javax.persistence.PersistenceException: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:762)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at cs636.music.dao.DbDAO.startTransaction(DbDAO.java:37)
+	at cs636.music.dao.ProductDAOTest.setup(ProductDAOTest.java:35)
+Caused by: Exception [EclipseLink-7060] (Eclipse Persistence Services - 2.5.0.v20130507-3faac2b): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Cannot acquire data source [java:comp/env/jdbc/mysql].
+Internal Exception: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+	at org.eclipse.persistence.exceptions.ValidationException.cannotAcquireDataSource(ValidationException.java:520)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:109)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.setOrDetectDatasource(DatabaseSessionImpl.java:203)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:734)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:239)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:681)
+Caused by: javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:662)
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:307)
+	at javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:344)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:101)
+
+
